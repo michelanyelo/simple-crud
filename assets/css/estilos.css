@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary-color: #2196f3;
+  --secondary-color: #3ca7ff;
+  --text-color: #222;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: Roboto, sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 0.3s all ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+nav {
+  padding-left: 25px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 15px;
+}
+
+input[type='text'] {
+  border: none;
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 10px 15px;
+  outline: 0px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.form_container {
+  margin-top: 5rem;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form_input {
+  width: 100%;
+}
+
+.form_input label {
+  font-weight: 500;
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 3px;
+}
+
+.form_footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 15px;
+
+}
+
+.form_footer button[type='submit'] {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.form_footer button[type='submit']:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.form_footer button[type='reset'] {
+  background-color: #fff;
+  color: #222;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.form_input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.form_input input {
+  margin-bottom: 20px;
+}
+
+.formulario {
+  display: block;
+  min-width: 350px;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+#categorias_footer,
+#productos_footer {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.lista_categorias,
+.lista_productos {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+
+th, td {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.celda {
+  min-width: 100px;
+}
