@@ -78,7 +78,9 @@
             </div>
         </div>
     </main>
-
+    <footer id="productos_footer">
+        <p>Hecho por - Miguel Ángel Monzón Martínez</p>
+    </footer>
 </body>
 
 </html>
