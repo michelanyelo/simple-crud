@@ -36,17 +36,11 @@
             <div class="lista_categorias">
                 <table>
                     <tr>
-                        <th>ID</th>
                         <th>Código</th>
                         <th>Nombre Categoria</th>
                     </tr>
                     <?php foreach ($categorias as $categoria) : ?>
                         <tr>
-                            <td>
-                                <div class="celda">
-                                    <?= $categoria["id"] ?>
-                                </div>
-                            </td>
                             <td>
                                 <div class="celda">
                                     <?= $categoria["codigo"] ?>
