@@ -1,5 +1,5 @@
 <?php
-
+/* @autor Miguel Ángel Monzón Martínez */
 class Categoria
 {
     private $id;
