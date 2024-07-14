@@ -73,6 +73,9 @@
                     <?php endforeach; ?>
                 </table>
             </div>
+            <div class="form_footer">
+                <button type="submit" onclick="window.location.href='views/productos.html'" class="btn btn-agregar-producto">Agregar</button>
+            </div>
         </div>
     </main>
 
