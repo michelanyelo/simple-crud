@@ -61,6 +61,9 @@
                     <?php endforeach; ?>
                 </table>
             </div>
+            <div class="form_footer">
+                <button type="submit" onclick="window.location.href='views/categorias.html'" class="btn btn-agregar-categoria">Agregar</button>
+            </div>
         </div>
     </main>
 
