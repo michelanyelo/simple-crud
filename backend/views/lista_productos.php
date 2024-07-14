@@ -36,6 +36,7 @@
             <div class="lista_productos">
                 <table>
                     <tr>
+                        <th>ID</th>
                         <th>Nombre Producto</th>
                         <th>Descripción Producto</th>
                         <th>Precio Producto</th>
@@ -43,6 +44,11 @@
                     </tr>
                     <?php foreach ($productos as $producto) : ?>
                         <tr>
+                            <td>
+                                <div class="celda">
+                                    <?= $producto["id"] ?>
+                                </div>
+                            </td>
                             <td>
                                 <div class="celda">
                                     <?= $producto["nombre"] ?>
