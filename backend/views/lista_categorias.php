@@ -66,7 +66,9 @@
             </div>
         </div>
     </main>
-
+    <footer id="categorias_footer">
+        <p>Hecho por - Miguel Ángel Monzón Martínez</p>
+    </footer>
 </body>
 
 </html>
