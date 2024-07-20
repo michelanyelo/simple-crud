@@ -22,7 +22,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="#"><img class="logo" src="assets/img/logo.svg" /></a>
+                    <a href="#"><img class="logo" src="assets/img/music-store.png" /></a>
                 </li>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="backend/views/categorias.html">Categorias</a></li>
@@ -47,7 +47,7 @@
                                 <p class="card-text fs-5 fw-bold"> <?= $producto["nombre"] ?></p>
                                 <p class="card-text">Condición: <?= $producto["descripcion"] ?></p>
                                 <p class="card-text">Valor: <?= $producto["precio"] ?></p>
-                                <p class="card-text">Género: <?= $producto["categoria_nombre"] ?></p>
+                                <p class="card-text text-primary">Género: <?= $producto["categoria_nombre"] ?></p>
                             </div>
                         </div>
                     </div>
