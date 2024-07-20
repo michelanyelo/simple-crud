@@ -4,6 +4,8 @@
   --primary-color: #2196f3;
   --secondary-color: #3ca7ff;
   --text-color: #222;
+  --card-bg-color: #fff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -169,4 +171,57 @@ td {
 
 .celda {
   min-width: 100px;
+}
+
+/* Componente Card */
+.card {
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px var(--card-shadow);
+  overflow: hidden;
+  transition: 0.3s box-shadow ease;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 16px var(--card-shadow);
+  cursor: pointer;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-text {
+  margin-bottom: 0.5rem;
+}
+
+.card-text.fs-5 {
+  font-weight: 700;
+}
+
+/* Estilo Titulos home.php */
+
+h1.fs-3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+h1.fs-2 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
 }
