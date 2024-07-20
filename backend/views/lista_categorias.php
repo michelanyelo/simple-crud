@@ -17,16 +17,16 @@
     <nav>
         <ul>
             <li>
-                <a href="../views/home.html">
+                <a href="../index.php">
                     <img class="logo" src="../assets/img/logo.svg" />
                 </a>
             </li>
-            <li><a href="../views/home.html">Inicio</a></li>
+            <li><a href="../index.php">Inicio</a></li>
             <li><a href="views/categorias.html">Categorias</a></li>
             <li>
                 <a href="#">Lista Categorias</a>
             </li>
-            <li><a href="views/productos.html">Productos</a></li>
+            <li><a href="productos.php">Productos</a></li>
             <li><a href="lista_productos.php">Lista Productos</a></li>
         </ul>
     </nav>

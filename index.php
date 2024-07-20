@@ -10,9 +10,10 @@ $db->getConn();
 
 // Comprobar si la conexión fue exitosa
 if ($db->conn) {
-    echo "Conexión exitosa!";
+    $producto = new Producto($db->getConn());
+    $productos = $producto->getAllCat();
+    include('views/home.php');
+    exit;
 } else {
     echo "Error en la conexión.";
 }
-
-header('Location: views/home.html');

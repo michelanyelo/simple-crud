@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
   --primary-color: #2196f3;
@@ -25,7 +25,7 @@ a:hover {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   min-height: 100vh;
   background-color: #f5f5f5;
@@ -52,12 +52,16 @@ nav ul li {
   padding: 15px;
 }
 
-input[type='text'] {
+input[type="text"],
+[type="file"],
+select,
+textarea {
   border: none;
   box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   padding: 10px 15px;
   outline: 0px;
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -89,20 +93,19 @@ input[type='text'] {
   justify-content: flex-end;
   margin-top: 20px;
   gap: 15px;
-
 }
 
-.form_footer button[type='submit'] {
+.form_footer button[type="submit"] {
   background-color: var(--primary-color);
   color: #fff;
 }
 
-.form_footer button[type='submit']:hover {
+.form_footer button[type="submit"]:hover {
   background-color: var(--secondary-color);
   color: #fff;
 }
 
-.form_footer button[type='reset'] {
+.form_footer button[type="reset"] {
   background-color: #fff;
   color: #222;
 }
@@ -156,7 +159,6 @@ input[type='text'] {
   padding: 30px;
   border-radius: 12px;
 }
-
 
 th,
 td {

@@ -41,7 +41,7 @@ $(document).ready(function () {
         let descripcionProducto = $('#descripcionProducto').val();
         let precioProducto = $('#precioProducto').val();
         let categoriaProducto = $('#categoriaProducto').val();
-
+        let imgProducto = $('#imgProducto').val();
 
         // Lista de campos vacíos
         var camposVacios = [];
@@ -58,6 +58,9 @@ $(document).ready(function () {
         }
         if ($.trim(categoriaProducto) === '') {
             camposVacios.push('Categoria del producto');
+        }
+        if ($.trim(imgProducto) === '') {
+            camposVacios.push('Imagen del producto');
         }
         
 

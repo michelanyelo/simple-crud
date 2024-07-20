@@ -118,4 +118,16 @@ class Producto
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    public function getAllCat()
+    {
+        $sql = "SELECT p.*, c.nombre AS categoria_nombre 
+                FROM productos p
+                INNER JOIN categorias c 
+                ON p.id_categoria = c.id
+                ORDER BY p.id ASC";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

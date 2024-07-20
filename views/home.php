@@ -4,51 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Categorías</title>
+    <title>Record Store</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="../assets/img/music-store.png" type="image/png">
+    <link rel="shortcut icon" href="assets/img/music-store.png" type="image/png">
     <!-- css propio -->
-    <link rel="stylesheet" href="../assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="../index.php">
-                    <img class="logo" src="../assets/img/logo.svg" />
-                </a>
-            </li>
-            <li><a href="../index.php">Inicio</a></li>
-            <li><a href="views/categorias.html">Categorias</a></li>
-            <li>
-                <a href="lista_categorias.php">Lista Categorias</a>
-            </li>
-            <li><a href="productos.php">Productos</a></li>
-            <li><a href="#">Lista Productos</a></li>
-        </ul>
-    </nav>
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#"><img class="logo" src="assets/img/logo.svg" /></a>
+                </li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="backend/views/categorias.html">Categorias</a></li>
+                <li><a href="backend/lista_categorias.php">Lista Categorias</a></li>
+                <li><a href="backend/productos.php">Productos</a></li>
+                <li><a href="backend/lista_productos.php">Lista Productos</a></li>
+            </ul>
+        </nav>
+    </main>
+
+
     <main class="main_section">
         <div class="form_container">
-            <h1>Listado de productos</h1>
+            <h1>Listado de productos y Categoría</h1>
             <div class="lista_productos">
                 <table>
                     <tr>
-                        <th>ID</th>
-                        <th>Nombre Producto</th>
-                        <th>Descripción Producto</th>
-                        <th>Precio Producto</th>
-                        <th>ID Categoría</th>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Categoría</th>
                     </tr>
-                    <?php foreach ($productos as $producto) : ?>
+                    <?php foreach ($productos as $producto) { ?>
                         <tr>
-                            <td>
-                                <div class="celda">
-                                    <?= $producto["id"] ?>
-                                </div>
-                            </td>
                             <td>
                                 <div class="celda">
                                     <?= $producto["nombre"] ?>
@@ -66,15 +60,12 @@
                             </td>
                             <td>
                                 <div class="celda">
-                                    <?= $producto["id_categoria"] ?>
+                                    <?= $producto["categoria_nombre"] ?>
                                 </div>
                             </td>
                         </tr>
-                    <?php endforeach; ?>
+                    <?php } ?>
                 </table>
-            </div>
-            <div class="form_footer">
-                <button type="submit" onclick="window.location.href='productos.php'" class="btn btn-agregar-producto">Agregar</button>
             </div>
         </div>
     </main>
