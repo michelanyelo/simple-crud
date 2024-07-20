@@ -16,7 +16,9 @@
 </head>
 
 <body>
-    <main>
+
+    <!-- Navbar -->
+    <header>
         <nav>
             <ul>
                 <li>
@@ -29,14 +31,14 @@
                 <li><a href="backend/lista_productos.php">Lista Productos</a></li>
             </ul>
         </nav>
-    </main>
+    </header>
 
-
+    <!-- Main Section - Productos -->
     <main class="main_section">
         <div class="form_container">
             <h1 class="fs-3 fw-normal">Encuentra aquí</h1>
             <h1 class="fs-2 text-decoration-underline">VINILOS NUEVOS</h1>
-            <div class="lista_productos row mt-3 py-5">
+            <div class="row mt-3 py-5">
                 <?php foreach ($productos as $producto) { ?>
                     <div class="col-12 col-md-3 d-flex justify-content-around">
                         <div class="card mb-5 w-75">
@@ -53,8 +55,10 @@
             </div>
         </div>
     </main>
+
+    <!-- Footer con nombre -->
     <footer id="productos_footer">
-        <p>Hecho por - Miguel Ángel Monzón Martínez</p>
+        <p class="fw-bold">Hecho por - Miguel Ángel Monzón Martínez</p>
     </footer>
 
     <!-- JS Bootstrap -->
