@@ -7,6 +7,7 @@ class Producto
     private $precio;
     private $descripcion;
     private $id_categoria;
+    private $imagen;
     private $conn;
 
     public function __construct($conn)
@@ -35,6 +36,11 @@ class Producto
         return $this->descripcion;
     }
 
+    public function getImagen()
+    {
+        return $this->imagen;
+    }
+
     public function getIdCategoria()
     {
         return $this->id_categoria;
@@ -61,6 +67,11 @@ class Producto
         $this->descripcion = $descripcion;
     }
 
+    public function setImagen($imagen)
+    {
+        $this->imagen = $imagen;
+    }
+
     public function setIdCategoria($id_categoria)
     {
         $this->id_categoria = $id_categoria;
@@ -69,11 +80,12 @@ class Producto
     // insertar
     public function insert()
     {
-        $sql = "INSERT INTO productos (nombre, precio, descripcion, id_categoria) VALUES (:nombre, :precio, :descripcion, :id_categoria)";
+        $sql = "INSERT INTO productos (nombre, precio, descripcion, imagen, id_categoria) VALUES (:nombre, :precio, :descripcion, :imagen, :id_categoria)";
         $stmt = $this->conn->prepare($sql);
         $stmt->bindParam(':nombre', $this->nombre);
         $stmt->bindParam(':precio', $this->precio);
         $stmt->bindParam(':descripcion', $this->descripcion);
+        $stmt->bindParam(':imagen', $this->imagen);
         $stmt->bindParam(':id_categoria', $this->id_categoria);
         $stmt->execute();
     }
@@ -91,12 +103,13 @@ class Producto
     // actualizar
     public function update($id)
     {
-        $sql = "UPDATE productos SET nombre = :nombre, precio = :precio, descripcion = :descripcion, id_categoria = :id_categoria WHERE id = :id";
+        $sql = "UPDATE productos SET nombre = :nombre, precio = :precio, descripcion = :descripcion, imagen = :imagen, id_categoria = :id_categoria WHERE id = :id";
         $stmt = $this->conn->prepare($sql);
         $stmt->bindParam(':id', $id);
         $stmt->bindParam(':nombre', $this->nombre);
         $stmt->bindParam(':precio', $this->precio);
         $stmt->bindParam(':descripcion', $this->descripcion);
+        $stmt->bindParam(':imagen', $this->imagen);
         $stmt->bindParam(':id_categoria', $this->id_categoria);
         $stmt->execute();
     }
